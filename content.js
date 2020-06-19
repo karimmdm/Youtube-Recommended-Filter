@@ -1,8 +1,7 @@
 window.onload = function(){
     var url = window.location.href;
-    console.log(url);
     if(url.indexOf("watch?v=") != -1){
-        console.log("removing videos...")
+        console.log("removing...");
         filterType1();
     }
 }
