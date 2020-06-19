@@ -4,10 +4,10 @@
   "description": "Removes videos from recommended list by tags, title and channel",
   "manifest_version": 2,
   "icons": {
-      "16": "16.png",
-      "48": "48.png",
-      "32": "32.png",
-      "128": "128.png"
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "32": "icons/32.png",
+      "128": "icons/128.png"
   },
   "content_scripts": [
       {

@@ -46,16 +46,21 @@ window.onload = function(){
     /*helper method to update the chrome storage*/
     function setChannels(channels){
         chrome.storage.local.set({channels: channels}, function(result){
-            chrome.storage.local.get('channels', function(result){
-                console.log(result.channels);
-            });
+            // chrome.storage.local.get('channels', function(result){
+            //     console.log(result.channels);
+            // });
         });
     }
 
     function showAll(){
         chrome.storage.local.get('channels', function(result){
-            console.log(result.channels);
-            window.alert("Black Listed Channels: " + result.channels);
+            // console.log(result.channels);
+            if(result.channels == null || (result.channels).length != 0){
+                window.alert("Blacklisted Channels: none");
+            }else{
+
+                window.alert("Blacklisted Channels: " + result.channels);
+            }
         });
     }
 }
