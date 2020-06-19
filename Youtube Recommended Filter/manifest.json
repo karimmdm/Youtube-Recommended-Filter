@@ -1,0 +1,28 @@
+{
+  "name": "Youtube Recommended Filter",
+  "version": "1.0",
+  "description": "Removes videos from recommended list by tags, title and channel",
+  "manifest_version": 2,
+  "icons": {
+      "16": "16.png",
+      "48": "48.png",
+      "32": "32.png",
+      "128": "128.png"
+  },
+  "content_scripts": [
+      {
+          "matches": [
+              "https://www.youtube.com/*",
+              "http://www.youtube.com/*"
+          ],
+          "js": ["content.js", "jquery.js"]
+      }
+  ],
+  "browser_action":{
+      "default_popup": "popup.html",
+      "default_title": "Youtube Recommended Filter"
+  },
+  "permissions":[
+      "storage"
+  ]
+}
