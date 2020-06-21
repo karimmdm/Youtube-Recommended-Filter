@@ -2,4 +2,4 @@
 Removes videos by specified channels in the Up Next section of the website
 
 ## Installation
-Drag and drop the .crx file into Chrome
+Download all the files. Go to chrome://extensions and load unpacked all the files
